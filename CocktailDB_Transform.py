@@ -109,7 +109,7 @@ if response.status_code == 200:
     # Data-type and export scrubbed data
     try:
         # Determine if mandatory fields are populated
-        validate(instance=data_in, schema=schema_in)
+        validate(instance=data, schema=schema_in)
         print("Mandatory data is populated.")
 
         # Transform data into CIM schema
